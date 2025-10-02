@@ -1,0 +1,15 @@
+:root {
+  --shadow-x: 0px;
+  --shadow-y: 0px;
+  --shadow-blur: 4px;
+  --shadow-spread: 0px;
+  --shadow-opacity: 0.4;
+}
+
+.dark {
+  --shadow-x: 0px;
+  --shadow-y: 0px;
+  --shadow-blur: 4px;
+  --shadow-spread: 0px;
+  --shadow-opacity: 0.4;
+}

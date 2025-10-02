@@ -1,0 +1,227 @@
+[
+  {
+    "id": "inception",
+    "title": "Inception",
+    "year": 2010,
+    "rating": 8.8,
+    "genres": ["Sci-Fi", "Thriller"],
+    "providers": ["netflix", "prime-video"],
+    "synopsis": "A thief enters dreams to plant an idea, blurring the line between reality and imagination."
+  },
+  {
+    "id": "interstellar",
+    "title": "Interstellar",
+    "year": 2014,
+    "rating": 8.6,
+    "genres": ["Sci-Fi", "Drama"],
+    "providers": ["prime-video", "hotstar"],
+    "synopsis": "Explorers travel through a wormhole to find a new home for humanity."
+  },
+  {
+    "id": "the-dark-knight",
+    "title": "The Dark Knight",
+    "year": 2008,
+    "rating": 9.0,
+    "genres": ["Action", "Crime", "Thriller"],
+    "providers": ["netflix"],
+    "synopsis": "Batman faces the Joker in a battle that tests Gotham’s moral limits."
+  },
+  {
+    "id": "la-la-land",
+    "title": "La La Land",
+    "year": 2016,
+    "rating": 8.0,
+    "genres": ["Romance", "Drama"],
+    "providers": ["hotstar"],
+    "synopsis": "A jazz musician and an actress chase dreams in Los Angeles."
+  },
+  {
+    "id": "parasite",
+    "title": "Parasite",
+    "year": 2019,
+    "rating": 8.6,
+    "genres": ["Thriller", "Drama"],
+    "providers": ["prime-video", "hotstar"],
+    "synopsis": "A cunning plan entangles two families across class lines."
+  },
+  {
+    "id": "the-social-network",
+    "title": "The Social Network",
+    "year": 2010,
+    "rating": 7.8,
+    "genres": ["Drama"],
+    "providers": ["netflix", "prime-video"],
+    "synopsis": "The founding of Facebook sparks ambition, betrayal, and legal battles."
+  },
+  {
+    "id": "spirited-away",
+    "title": "Spirited Away",
+    "year": 2001,
+    "rating": 8.6,
+    "genres": ["Animation", "Fantasy", "Family"],
+    "providers": ["netflix", "hotstar"],
+    "synopsis": "A young girl enters a spirit world and must find her way back."
+  },
+  {
+    "id": "mad-max-fury-road",
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "rating": 8.1,
+    "genres": ["Action", "Adventure"],
+    "providers": ["prime-video"],
+    "synopsis": "In a desert wasteland, a high-octane escape ignites a rebellion."
+  },
+  {
+    "id": "whiplash",
+    "title": "Whiplash",
+    "year": 2014,
+    "rating": 8.5,
+    "genres": ["Drama"],
+    "providers": ["netflix"],
+    "synopsis": "An ambitious drummer clashes with a ruthless instructor."
+  },
+  {
+    "id": "coco",
+    "title": "Coco",
+    "year": 2017,
+    "rating": 8.4,
+    "genres": ["Animation", "Family", "Fantasy"],
+    "providers": ["hotstar", "prime-video"],
+    "synopsis": "A boy’s journey into the Land of the Dead celebrates music and memory."
+  },
+  {
+    "id": "get-out",
+    "title": "Get Out",
+    "year": 2017,
+    "rating": 7.7,
+    "genres": ["Horror", "Thriller"],
+    "providers": ["netflix"],
+    "synopsis": "A visit to the in-laws spirals into a chilling social nightmare."
+  },
+  {
+    "id": "arrival",
+    "title": "Arrival",
+    "year": 2016,
+    "rating": 7.9,
+    "genres": ["Sci-Fi", "Drama"],
+    "providers": ["prime-video"],
+    "synopsis": "A linguist deciphers alien language to unlock a different perception of time."
+  },
+  {
+    "id": "the-grand-budapest-hotel",
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "rating": 8.1,
+    "genres": ["Comedy", "Drama"],
+    "providers": ["hotstar"],
+    "synopsis": "A legendary concierge and his lobby boy navigate a caper of a lifetime."
+  },
+  {
+    "id": "the-godfather",
+    "title": "The Godfather",
+    "year": 1972,
+    "rating": 9.2,
+    "genres": ["Crime", "Drama"],
+    "providers": ["prime-video"],
+    "synopsis": "A powerful crime family negotiates loyalty, power, and legacy."
+  },
+  {
+    "id": "toy-story",
+    "title": "Toy Story",
+    "year": 1995,
+    "rating": 8.3,
+    "genres": ["Animation", "Family", "Comedy"],
+    "providers": ["hotstar"],
+    "synopsis": "Toys come to life and learn about friendship and change."
+  },
+  {
+    "id": "joker",
+    "title": "Joker",
+    "year": 2019,
+    "rating": 8.4,
+    "genres": ["Crime", "Drama"],
+    "providers": ["netflix", "prime-video"],
+    "synopsis": "A man’s descent into chaos births a notorious Gotham figure."
+  },
+  {
+    "id": "knives-out",
+    "title": "Knives Out",
+    "year": 2019,
+    "rating": 7.9,
+    "genres": ["Comedy", "Crime", "Thriller"],
+    "providers": ["prime-video"],
+    "synopsis": "A witty detective unravels a wealthy family’s web of lies."
+  },
+  {
+    "id": "your-name",
+    "title": "Your Name",
+    "year": 2016,
+    "rating": 8.4,
+    "genres": ["Animation", "Romance", "Drama"],
+    "providers": ["netflix", "hotstar"],
+    "synopsis": "Two teens mysteriously connect across time and distance."
+  },
+  {
+    "id": "the-matrix",
+    "title": "The Matrix",
+    "year": 1999,
+    "rating": 8.7,
+    "genres": ["Sci-Fi", "Action"],
+    "providers": ["netflix"],
+    "synopsis": "A hacker awakens to a simulated reality and the fight for freedom."
+  },
+  {
+    "id": "capernaum",
+    "title": "Capernaum",
+    "year": 2018,
+    "rating": 8.4,
+    "genres": ["Drama"],
+    "providers": ["prime-video"],
+    "synopsis": "A Lebanese boy sues his parents for bringing him into a world of hardship."
+  },
+  {
+    "id": "rango",
+    "title": "Rango",
+    "year": 2011,
+    "rating": 7.2,
+    "genres": ["Animation", "Comedy", "Adventure"],
+    "providers": ["prime-video", "hotstar"],
+    "synopsis": "A chameleon becomes a town’s unlikely sheriff in a dusty frontier."
+  },
+  {
+    "id": "the-conjuring",
+    "title": "The Conjuring",
+    "year": 2013,
+    "rating": 7.5,
+    "genres": ["Horror", "Thriller"],
+    "providers": ["hotstar"],
+    "synopsis": "Paranormal investigators confront a terrifying presence in a farmhouse."
+  },
+  {
+    "id": "zindagi-na-milegi-dobara",
+    "title": "Zindagi Na Milegi Dobara",
+    "year": 2011,
+    "rating": 8.2,
+    "genres": ["Drama", "Comedy"],
+    "providers": ["netflix", "hotstar"],
+    "synopsis": "Three friends embark on a life-changing road trip across Spain."
+  },
+  {
+    "id": "andhadhun",
+    "title": "Andhadhun",
+    "year": 2018,
+    "rating": 8.2,
+    "genres": ["Thriller", "Crime"],
+    "providers": ["netflix", "prime-video"],
+    "synopsis": "A blind pianist is swept into a darkly comic crime tangle."
+  },
+  {
+    "id": "dangal",
+    "title": "Dangal",
+    "year": 2016,
+    "rating": 8.3,
+    "genres": ["Drama", "Family"],
+    "providers": ["hotstar"],
+    "synopsis": "A father coaches his daughters to wrestling glory against the odds."
+  }
+]
