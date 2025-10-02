@@ -1,18 +1,21 @@
 import { Suspense } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import MovieRecommender from "@/components/movie-recommender"
+import Hero from "@/components/sections/hero"
+import Features from "@/components/sections/features"
+import Testimonials from "@/components/sections/testimonials"
 
 export default function HomePage() {
   return (
     <main className="min-h-dvh">
-      <section className="px-6 py-10 mx-auto w-full max-w-5xl">
-        <header className="mb-8">
-          <h1 className="text-pretty text-3xl font-semibold tracking-tight">AI Movie Recommendation Bot</h1>
-          <p className="text-pretty mt-2 text-sm text-muted-foreground">
-            Get tailored picks across Netflix, Amazon Prime Video, and Disney+ Hotstar.
-          </p>
-        </header>
+      {/* Hero Section */}
+      <Hero />
 
+      {/* Features Section */}
+      <Features />
+
+      {/* Movie Recommender Section */}
+      <section id="recommend" className="px-6 py-10 mx-auto w-full max-w-5xl">
         <Card className="bg-card text-card-foreground border-border">
           <CardHeader>
             <CardTitle className="text-balance">Find your next movie</CardTitle>
@@ -24,6 +27,9 @@ export default function HomePage() {
           </CardContent>
         </Card>
       </section>
+
+      {/* Testimonials Section */}
+      <Testimonials />
     </main>
   )
 }
