@@ -12,9 +12,8 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 ## Deployment
 
-Your project is live at:
+Your project is live at:https://v0-movie-recommendation-bot-five.vercel.app/
 
-**[https://vercel.com/nehasribcm-5105s-projects/v0-movie-recommendation-bot](https://vercel.com/nehasribcm-5105s-projects/v0-movie-recommendation-bot)**
 
 ## Build your app
 
