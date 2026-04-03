@@ -1,11 +1,872 @@
 [
   {
+    "id": "mughal-e-azam",
+    "title": "Mughal-e-Azam",
+    "year": 1960,
+    "rating": 8.2,
+    "genres": ["Drama", "Romance", "Musical"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Hindi",
+    "synopsis": "The epic tale of a Mughal prince's forbidden love for a court dancer, defying his emperor father."
+  },
+  {
+    "id": "pyaasa",
+    "title": "Pyaasa",
+    "year": 1957,
+    "rating": 8.6,
+    "genres": ["Drama", "Romance", "Musical"],
+    "providers": ["prime-video"],
+    "language": "Hindi",
+    "synopsis": "A struggling poet finds his work celebrated only after he is presumed dead."
+  },
+  {
+    "id": "mother-india",
+    "title": "Mother India",
+    "year": 1957,
+    "rating": 8.1,
+    "genres": ["Drama"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Hindi",
+    "synopsis": "A poverty-stricken woman raises her sons through hardship while maintaining her honor."
+  },
+  {
+    "id": "guide",
+    "title": "Guide",
+    "year": 1965,
+    "rating": 8.0,
+    "genres": ["Drama", "Romance", "Musical"],
+    "providers": ["prime-video"],
+    "language": "Hindi",
+    "synopsis": "A tour guide falls for a married woman and helps her become a famous dancer."
+  },
+  {
+    "id": "sholay",
+    "title": "Sholay",
+    "year": 1975,
+    "rating": 8.2,
+    "genres": ["Action", "Adventure", "Comedy"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Hindi",
+    "synopsis": "Two criminals are hired by a retired police officer to capture the ruthless dacoit who murdered his family."
+  },
+  {
+    "id": "deewaar",
+    "title": "Deewaar",
+    "year": 1975,
+    "rating": 8.1,
+    "genres": ["Action", "Crime", "Drama"],
+    "providers": ["prime-video"],
+    "language": "Hindi",
+    "synopsis": "Two brothers on opposite sides of the law confront each other."
+  },
+  {
+    "id": "dilwale-ddlj",
+    "title": "Dilwale Dulhania Le Jayenge",
+    "year": 1995,
+    "rating": 8.0,
+    "genres": ["Romance", "Drama", "Musical"],
+    "providers": ["prime-video", "netflix"],
+    "language": "Hindi",
+    "synopsis": "A young man must win over the heart of a woman and her traditional father."
+  },
+  {
+    "id": "lagaan",
+    "title": "Lagaan",
+    "year": 2001,
+    "rating": 8.1,
+    "genres": ["Drama", "Musical", "Adventure"],
+    "providers": ["netflix", "prime-video"],
+    "language": "Hindi",
+    "synopsis": "Villagers stake their future on a cricket match against their British rulers."
+  },
+  {
+    "id": "dil-chahta-hai",
+    "title": "Dil Chahta Hai",
+    "year": 2001,
+    "rating": 8.1,
+    "genres": ["Comedy", "Drama", "Romance"],
+    "providers": ["netflix", "prime-video"],
+    "language": "Hindi",
+    "synopsis": "Three inseparable childhood friends navigate love, loss, and growing up."
+  },
+  {
+    "id": "rang-de-basanti",
+    "title": "Rang De Basanti",
+    "year": 2006,
+    "rating": 8.1,
+    "genres": ["Drama", "Thriller"],
+    "providers": ["netflix", "hotstar"],
+    "language": "Hindi",
+    "synopsis": "College students discover parallels between themselves and India's freedom fighters."
+  },
+  {
+    "id": "taare-zameen-par",
+    "title": "Taare Zameen Par",
+    "year": 2007,
+    "rating": 8.4,
+    "genres": ["Drama", "Family"],
+    "providers": ["netflix", "prime-video"],
+    "language": "Hindi",
+    "synopsis": "A teacher recognizes and nurtures the artistic talents of a dyslexic child."
+  },
+  {
+    "id": "3-idiots",
+    "title": "3 Idiots",
+    "year": 2009,
+    "rating": 8.4,
+    "genres": ["Comedy", "Drama"],
+    "providers": ["netflix", "prime-video"],
+    "language": "Hindi",
+    "synopsis": "Two friends search for a lost buddy while recounting their college days and philosophy of life."
+  },
+  {
+    "id": "zindagi-na-milegi-dobara",
+    "title": "Zindagi Na Milegi Dobara",
+    "year": 2011,
+    "rating": 8.2,
+    "genres": ["Drama", "Comedy", "Adventure"],
+    "providers": ["netflix", "hotstar"],
+    "language": "Hindi",
+    "synopsis": "Three friends embark on a life-changing road trip across Spain."
+  },
+  {
+    "id": "gangs-of-wasseypur",
+    "title": "Gangs of Wasseypur",
+    "year": 2012,
+    "rating": 8.2,
+    "genres": ["Action", "Crime", "Drama"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Hindi",
+    "synopsis": "A multigenerational saga of coal mafia rivalry spanning decades."
+  },
+  {
+    "id": "pk",
+    "title": "PK",
+    "year": 2014,
+    "rating": 8.1,
+    "genres": ["Comedy", "Drama", "Sci-Fi"],
+    "providers": ["netflix", "hotstar"],
+    "language": "Hindi",
+    "synopsis": "An alien on Earth questions religious dogmas and rituals."
+  },
+  {
+    "id": "dangal",
+    "title": "Dangal",
+    "year": 2016,
+    "rating": 8.4,
+    "genres": ["Drama", "Family", "Action"],
+    "providers": ["netflix", "hotstar"],
+    "language": "Hindi",
+    "synopsis": "A father coaches his daughters to become world-class wrestlers."
+  },
+  {
+    "id": "andhadhun",
+    "title": "Andhadhun",
+    "year": 2018,
+    "rating": 8.3,
+    "genres": ["Thriller", "Crime", "Comedy"],
+    "providers": ["netflix", "prime-video"],
+    "language": "Hindi",
+    "synopsis": "A blind pianist becomes entangled in the murder of his neighbor."
+  },
+  {
+    "id": "article-15",
+    "title": "Article 15",
+    "year": 2019,
+    "rating": 8.1,
+    "genres": ["Crime", "Drama", "Thriller"],
+    "providers": ["netflix"],
+    "language": "Hindi",
+    "synopsis": "A police officer investigates the disappearance of three village girls."
+  },
+  {
+    "id": "gully-boy",
+    "title": "Gully Boy",
+    "year": 2019,
+    "rating": 8.0,
+    "genres": ["Drama", "Musical"],
+    "providers": ["prime-video"],
+    "language": "Hindi",
+    "synopsis": "A young rapper from the Mumbai slums rises to fame through hip-hop."
+  },
+  {
+    "id": "tumbbad",
+    "title": "Tumbbad",
+    "year": 2018,
+    "rating": 8.2,
+    "genres": ["Horror", "Fantasy", "Thriller"],
+    "providers": ["prime-video"],
+    "language": "Hindi",
+    "synopsis": "A man's obsession with ancestral treasure leads him to a cursed village."
+  },
+  {
+    "id": "12th-fail",
+    "title": "12th Fail",
+    "year": 2023,
+    "rating": 9.2,
+    "genres": ["Drama"],
+    "providers": ["hotstar"],
+    "language": "Hindi",
+    "synopsis": "The inspiring true story of a village boy who overcomes all odds to become an IPS officer."
+  },
+  {
+    "id": "pathaan",
+    "title": "Pathaan",
+    "year": 2023,
+    "rating": 7.8,
+    "genres": ["Action", "Thriller"],
+    "providers": ["prime-video"],
+    "language": "Hindi",
+    "synopsis": "An Indian spy takes on a deadly mercenary with a vengeful agenda."
+  },
+  {
+    "id": "jawan",
+    "title": "Jawan",
+    "year": 2023,
+    "rating": 7.9,
+    "genres": ["Action", "Thriller", "Drama"],
+    "providers": ["netflix"],
+    "language": "Hindi",
+    "synopsis": "A vigilante and his team fight for justice while confronting a corrupt arms dealer."
+  },
+  {
+    "id": "mayabazar",
+    "title": "Mayabazar",
+    "year": 1957,
+    "rating": 9.3,
+    "genres": ["Fantasy", "Comedy", "Musical"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Telugu",
+    "synopsis": "A mythological tale where Lord Krishna helps unite separated lovers through his divine tricks."
+  },
+  {
+    "id": "sankarabharanam",
+    "title": "Sankarabharanam",
+    "year": 1980,
+    "rating": 8.5,
+    "genres": ["Drama", "Musical"],
+    "providers": ["prime-video"],
+    "language": "Telugu",
+    "synopsis": "A classical musician struggles to preserve traditional music against Western influences."
+  },
+  {
+    "id": "sagara-sangamam",
+    "title": "Sagara Sangamam",
+    "year": 1983,
+    "rating": 8.4,
+    "genres": ["Drama", "Musical", "Romance"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Telugu",
+    "synopsis": "A gifted but alcoholic classical dancer finds redemption through a devoted woman's love."
+  },
+  {
+    "id": "shiva-1990",
+    "title": "Shiva",
+    "year": 1990,
+    "rating": 7.8,
+    "genres": ["Action", "Thriller"],
+    "providers": ["prime-video"],
+    "language": "Telugu",
+    "synopsis": "A college student takes on corrupt politicians and gangsters terrorizing his campus."
+  },
+  {
+    "id": "pokiri",
+    "title": "Pokiri",
+    "year": 2006,
+    "rating": 8.0,
+    "genres": ["Action", "Thriller"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Telugu",
+    "synopsis": "A ruthless gangster's true identity and mission are revealed in a twist."
+  },
+  {
+    "id": "magadheera",
+    "title": "Magadheera",
+    "year": 2009,
+    "rating": 7.9,
+    "genres": ["Action", "Fantasy", "Romance"],
+    "providers": ["netflix", "hotstar"],
+    "language": "Telugu",
+    "synopsis": "A warrior reincarnates 400 years later to fulfill his love story."
+  },
+  {
+    "id": "baahubali-the-beginning",
+    "title": "Baahubali: The Beginning",
+    "year": 2015,
+    "rating": 8.0,
+    "genres": ["Action", "Drama", "Fantasy"],
+    "providers": ["netflix", "hotstar"],
+    "language": "Telugu",
+    "synopsis": "A young man discovers his royal heritage and the rivalry that shaped his destiny."
+  },
+  {
+    "id": "baahubali-2",
+    "title": "Baahubali 2: The Conclusion",
+    "year": 2017,
+    "rating": 8.2,
+    "genres": ["Action", "Drama", "Fantasy"],
+    "providers": ["netflix", "hotstar"],
+    "language": "Telugu",
+    "synopsis": "The epic conclusion reveals why Kattappa killed Baahubali."
+  },
+  {
+    "id": "arjun-reddy",
+    "title": "Arjun Reddy",
+    "year": 2017,
+    "rating": 8.1,
+    "genres": ["Drama", "Romance"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Telugu",
+    "synopsis": "A brilliant surgeon's self-destructive spiral after a heartbreaking breakup."
+  },
+  {
+    "id": "c-o-kancharapalem",
+    "title": "C/o Kancharapalem",
+    "year": 2018,
+    "rating": 8.4,
+    "genres": ["Drama", "Romance"],
+    "providers": ["netflix"],
+    "language": "Telugu",
+    "synopsis": "Four love stories unfold in a small town, challenging age and caste boundaries."
+  },
+  {
+    "id": "rrr",
+    "title": "RRR",
+    "year": 2022,
+    "rating": 8.0,
+    "genres": ["Action", "Drama"],
+    "providers": ["netflix", "hotstar"],
+    "language": "Telugu",
+    "synopsis": "Two legendary freedom fighters form a friendship before fighting the British Raj."
+  },
+  {
+    "id": "pushpa-the-rise",
+    "title": "Pushpa: The Rise",
+    "year": 2021,
+    "rating": 7.6,
+    "genres": ["Action", "Crime", "Drama"],
+    "providers": ["prime-video"],
+    "language": "Telugu",
+    "synopsis": "A laborer rises through the ranks of a red sandalwood smuggling syndicate."
+  },
+  {
+    "id": "ala-vaikunthapurramuloo",
+    "title": "Ala Vaikunthapurramuloo",
+    "year": 2020,
+    "rating": 7.5,
+    "genres": ["Action", "Comedy", "Drama"],
+    "providers": ["netflix", "prime-video"],
+    "language": "Telugu",
+    "synopsis": "A man raised by an unloving father discovers he was swapped at birth."
+  },
+  {
+    "id": "jersey",
+    "title": "Jersey",
+    "year": 2019,
+    "rating": 8.6,
+    "genres": ["Drama", "Family"],
+    "providers": ["netflix"],
+    "language": "Telugu",
+    "synopsis": "A failed cricketer attempts a comeback at age 36 for his son's dream."
+  },
+  {
+    "id": "mahanati",
+    "title": "Mahanati",
+    "year": 2018,
+    "rating": 8.4,
+    "genres": ["Drama"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Telugu",
+    "synopsis": "The biography of legendary actress Savitri, from her rise to tragic fall."
+  },
+  {
+    "id": "kalki-2898-ad",
+    "title": "Kalki 2898 AD",
+    "year": 2024,
+    "rating": 7.8,
+    "genres": ["Sci-Fi", "Action", "Fantasy"],
+    "providers": ["netflix", "prime-video"],
+    "language": "Telugu",
+    "synopsis": "In a dystopian future, a bounty hunter's path crosses with an ancient prophecy."
+  },
+  {
+    "id": "parasakthi",
+    "title": "Parasakthi",
+    "year": 1952,
+    "rating": 8.0,
+    "genres": ["Drama"],
+    "providers": ["prime-video"],
+    "language": "Tamil",
+    "synopsis": "Three brothers separated by fate face social injustices in post-independence India."
+  },
+  {
+    "id": "sivaji-ganga",
+    "title": "Thiruvilayadal",
+    "year": 1965,
+    "rating": 8.5,
+    "genres": ["Fantasy", "Musical", "Drama"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Tamil",
+    "synopsis": "The divine play of Lord Shiva showcased through four mythological stories."
+  },
+  {
+    "id": "nayakan",
+    "title": "Nayakan",
+    "year": 1987,
+    "rating": 8.5,
+    "genres": ["Crime", "Drama"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Tamil",
+    "synopsis": "A man becomes a don to protect his community, losing his humanity along the way."
+  },
+  {
+    "id": "roja",
+    "title": "Roja",
+    "year": 1992,
+    "rating": 7.9,
+    "genres": ["Drama", "Romance", "Thriller"],
+    "providers": ["prime-video"],
+    "language": "Tamil",
+    "synopsis": "A newlywed woman fights to rescue her husband from militants in Kashmir."
+  },
+  {
+    "id": "indian-1996",
+    "title": "Indian",
+    "year": 1996,
+    "rating": 8.0,
+    "genres": ["Action", "Drama", "Thriller"],
+    "providers": ["hotstar"],
+    "language": "Tamil",
+    "synopsis": "An elderly freedom fighter wages war against corruption, even within his own family."
+  },
+  {
+    "id": "mudhalvan",
+    "title": "Mudhalvan",
+    "year": 1999,
+    "rating": 8.2,
+    "genres": ["Action", "Drama"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Tamil",
+    "synopsis": "A journalist becomes Chief Minister for a day and transforms governance."
+  },
+  {
+    "id": "kannathil-muthamittal",
+    "title": "Kannathil Muthamittal",
+    "year": 2002,
+    "rating": 8.2,
+    "genres": ["Drama"],
+    "providers": ["prime-video"],
+    "language": "Tamil",
+    "synopsis": "A young girl searches for her biological mother in war-torn Sri Lanka."
+  },
+  {
+    "id": "anniyan",
+    "title": "Anniyan",
+    "year": 2005,
+    "rating": 8.0,
+    "genres": ["Action", "Thriller"],
+    "providers": ["hotstar"],
+    "language": "Tamil",
+    "synopsis": "A man with multiple personalities becomes a vigilante punishing wrongdoers."
+  },
+  {
+    "id": "vettaiyaadu-vilaiyaadu",
+    "title": "Vettaiyaadu Vilaiyaadu",
+    "year": 2006,
+    "rating": 8.2,
+    "genres": ["Action", "Crime", "Thriller"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Tamil",
+    "synopsis": "A cop tracks a serial killer across continents."
+  },
+  {
+    "id": "subramaniapuram",
+    "title": "Subramaniapuram",
+    "year": 2008,
+    "rating": 8.3,
+    "genres": ["Crime", "Drama", "Romance"],
+    "providers": ["prime-video"],
+    "language": "Tamil",
+    "synopsis": "A nostalgic tale of friendship and love in 1980s small-town Tamil Nadu."
+  },
+  {
+    "id": "asuran",
+    "title": "Asuran",
+    "year": 2019,
+    "rating": 8.5,
+    "genres": ["Action", "Drama"],
+    "providers": ["prime-video"],
+    "language": "Tamil",
+    "synopsis": "A pacifist father must confront his violent past to protect his family from oppressors."
+  },
+  {
+    "id": "super-deluxe",
+    "title": "Super Deluxe",
+    "year": 2019,
+    "rating": 8.4,
+    "genres": ["Drama", "Comedy", "Thriller"],
+    "providers": ["netflix"],
+    "language": "Tamil",
+    "synopsis": "Four interconnected stories explore morality, identity, and unexpected twists."
+  },
+  {
+    "id": "kaithi",
+    "title": "Kaithi",
+    "year": 2019,
+    "rating": 8.4,
+    "genres": ["Action", "Thriller"],
+    "providers": ["hotstar"],
+    "language": "Tamil",
+    "synopsis": "An ex-convict helps police officers against drug lords on his way to meet his daughter."
+  },
+  {
+    "id": "vikram",
+    "title": "Vikram",
+    "year": 2022,
+    "rating": 8.3,
+    "genres": ["Action", "Thriller"],
+    "providers": ["hotstar"],
+    "language": "Tamil",
+    "synopsis": "A retired agent is drawn back into service when a special squad investigation goes wrong."
+  },
+  {
+    "id": "ponniyin-selvan-1",
+    "title": "Ponniyin Selvan: I",
+    "year": 2022,
+    "rating": 7.8,
+    "genres": ["Action", "Drama", "Adventure"],
+    "providers": ["prime-video"],
+    "language": "Tamil",
+    "synopsis": "The Chola empire faces conspiracy and intrigue as succession wars begin."
+  },
+  {
+    "id": "jailer",
+    "title": "Jailer",
+    "year": 2023,
+    "rating": 7.6,
+    "genres": ["Action", "Thriller"],
+    "providers": ["netflix"],
+    "language": "Tamil",
+    "synopsis": "A retired jailer takes on criminals who killed his son."
+  },
+  {
+    "id": "viduthalai-part-1",
+    "title": "Viduthalai Part 1",
+    "year": 2023,
+    "rating": 8.2,
+    "genres": ["Drama", "Thriller"],
+    "providers": ["prime-video"],
+    "language": "Tamil",
+    "synopsis": "A constable's encounter with a revolutionary leader changes his perspective."
+  },
+  {
+    "id": "neelakuyil",
+    "title": "Neelakuyil",
+    "year": 1954,
+    "rating": 8.0,
+    "genres": ["Drama", "Romance"],
+    "providers": ["prime-video"],
+    "language": "Malayalam",
+    "synopsis": "A progressive tale addressing caste discrimination through an inter-caste love story."
+  },
+  {
+    "id": "chemmeen",
+    "title": "Chemmeen",
+    "year": 1965,
+    "rating": 8.5,
+    "genres": ["Drama", "Romance"],
+    "providers": ["prime-video"],
+    "language": "Malayalam",
+    "synopsis": "A fisherman's daughter's forbidden love leads to tragedy on the sea."
+  },
+  {
+    "id": "kireedam",
+    "title": "Kireedam",
+    "year": 1989,
+    "rating": 8.6,
+    "genres": ["Drama"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Malayalam",
+    "synopsis": "A young man's dreams are crushed when circumstances force him into violence."
+  },
+  {
+    "id": "bharatham",
+    "title": "Bharatham",
+    "year": 1991,
+    "rating": 8.3,
+    "genres": ["Drama", "Musical"],
+    "providers": ["prime-video"],
+    "language": "Malayalam",
+    "synopsis": "Two classical singer brothers take different paths, one towards fame and one towards tragedy."
+  },
+  {
+    "id": "oru-vadakkan-veeragatha",
+    "title": "Oru Vadakkan Veeragatha",
+    "year": 1989,
+    "rating": 8.7,
+    "genres": ["Action", "Drama"],
+    "providers": ["prime-video"],
+    "language": "Malayalam",
+    "synopsis": "A legendary warrior is wrongly accused of betrayal by his own family."
+  },
+  {
+    "id": "drishyam",
+    "title": "Drishyam",
+    "year": 2013,
+    "rating": 8.5,
+    "genres": ["Thriller", "Crime", "Drama"],
+    "providers": ["hotstar", "prime-video"],
+    "language": "Malayalam",
+    "synopsis": "A father uses his cinema knowledge to protect his family from a murder investigation."
+  },
+  {
+    "id": "bangalore-days",
+    "title": "Bangalore Days",
+    "year": 2014,
+    "rating": 8.2,
+    "genres": ["Comedy", "Drama", "Romance"],
+    "providers": ["hotstar"],
+    "language": "Malayalam",
+    "synopsis": "Three cousins move to Bangalore and discover life, love, and growing up."
+  },
+  {
+    "id": "premam",
+    "title": "Premam",
+    "year": 2015,
+    "rating": 8.1,
+    "genres": ["Comedy", "Romance", "Drama"],
+    "providers": ["hotstar"],
+    "language": "Malayalam",
+    "synopsis": "A man falls in love three times across different stages of his life."
+  },
+  {
+    "id": "maheshinte-prathikaaram",
+    "title": "Maheshinte Prathikaaram",
+    "year": 2016,
+    "rating": 8.2,
+    "genres": ["Comedy", "Drama"],
+    "providers": ["prime-video"],
+    "language": "Malayalam",
+    "synopsis": "A photographer vows not to wear slippers until he avenges his public humiliation."
+  },
+  {
+    "id": "angamaly-diaries",
+    "title": "Angamaly Diaries",
+    "year": 2017,
+    "rating": 8.1,
+    "genres": ["Action", "Comedy", "Drama"],
+    "providers": ["prime-video"],
+    "language": "Malayalam",
+    "synopsis": "A young man dreams of making it big in the pork business in Angamaly."
+  },
+  {
+    "id": "kumbalangi-nights",
+    "title": "Kumbalangi Nights",
+    "year": 2019,
+    "rating": 8.5,
+    "genres": ["Drama", "Romance", "Comedy"],
+    "providers": ["prime-video"],
+    "language": "Malayalam",
+    "synopsis": "Four dysfunctional brothers find redemption through love and family bonds."
+  },
+  {
+    "id": "jallikattu",
+    "title": "Jallikattu",
+    "year": 2019,
+    "rating": 7.8,
+    "genres": ["Action", "Drama", "Thriller"],
+    "providers": ["prime-video"],
+    "language": "Malayalam",
+    "synopsis": "A village descends into chaos hunting an escaped buffalo, revealing primal human nature."
+  },
+  {
+    "id": "malik",
+    "title": "Malik",
+    "year": 2021,
+    "rating": 8.1,
+    "genres": ["Action", "Crime", "Drama"],
+    "providers": ["prime-video"],
+    "language": "Malayalam",
+    "synopsis": "The rise and fall of a leader in a coastal community over four decades."
+  },
+  {
+    "id": "minnal-murali",
+    "title": "Minnal Murali",
+    "year": 2021,
+    "rating": 7.7,
+    "genres": ["Action", "Comedy", "Sci-Fi"],
+    "providers": ["netflix"],
+    "language": "Malayalam",
+    "synopsis": "A tailor struck by lightning gains superpowers and must face a villain created the same way."
+  },
+  {
+    "id": "joji",
+    "title": "Joji",
+    "year": 2021,
+    "rating": 7.8,
+    "genres": ["Crime", "Drama", "Thriller"],
+    "providers": ["prime-video"],
+    "language": "Malayalam",
+    "synopsis": "An ambitious son plots his way to inherit his wealthy father's estate."
+  },
+  {
+    "id": "bheeshma-parvam",
+    "title": "Bheeshma Parvam",
+    "year": 2022,
+    "rating": 7.7,
+    "genres": ["Action", "Crime", "Drama"],
+    "providers": ["hotstar"],
+    "language": "Malayalam",
+    "synopsis": "An aging patriarch protects his family's legacy against enemies closing in."
+  },
+  {
+    "id": "manjummel-boys",
+    "title": "Manjummel Boys",
+    "year": 2024,
+    "rating": 8.6,
+    "genres": ["Drama", "Thriller", "Adventure"],
+    "providers": ["hotstar"],
+    "language": "Malayalam",
+    "synopsis": "Friends undertake a dangerous rescue mission in caves to save one of their own."
+  },
+  {
+    "id": "bedara-kannappa",
+    "title": "Bedara Kannappa",
+    "year": 1954,
+    "rating": 7.8,
+    "genres": ["Drama", "Fantasy"],
+    "providers": ["prime-video"],
+    "language": "Kannada",
+    "synopsis": "A hunter's devotion to Lord Shiva leads to divine intervention."
+  },
+  {
+    "id": "kasturi-nivasa",
+    "title": "Kasturi Nivasa",
+    "year": 1971,
+    "rating": 8.2,
+    "genres": ["Drama", "Romance"],
+    "providers": ["prime-video"],
+    "language": "Kannada",
+    "synopsis": "A wealthy man's household faces upheaval with the arrival of a mysterious woman."
+  },
+  {
+    "id": "bangarada-manushya",
+    "title": "Bangarada Manushya",
+    "year": 1972,
+    "rating": 8.3,
+    "genres": ["Drama", "Family"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Kannada",
+    "synopsis": "An educated man returns to his village to transform it through farming."
+  },
+  {
+    "id": "nagarahavu",
+    "title": "Nagarahavu",
+    "year": 1972,
+    "rating": 7.8,
+    "genres": ["Action", "Drama"],
+    "providers": ["prime-video"],
+    "language": "Kannada",
+    "synopsis": "A man seeks revenge against those who destroyed his family."
+  },
+  {
+    "id": "mungaru-male",
+    "title": "Mungaru Male",
+    "year": 2006,
+    "rating": 7.9,
+    "genres": ["Romance", "Drama"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Kannada",
+    "synopsis": "A college romance blossoms during the monsoon season."
+  },
+  {
+    "id": "lucia",
+    "title": "Lucia",
+    "year": 2013,
+    "rating": 8.2,
+    "genres": ["Thriller", "Drama", "Fantasy"],
+    "providers": ["prime-video"],
+    "language": "Kannada",
+    "synopsis": "A theater usher's dreams and reality blur with a mysterious sleeping pill."
+  },
+  {
+    "id": "ulidavaru-kandanthe",
+    "title": "Ulidavaru Kandanthe",
+    "year": 2014,
+    "rating": 8.4,
+    "genres": ["Thriller", "Drama", "Crime"],
+    "providers": ["prime-video"],
+    "language": "Kannada",
+    "synopsis": "A journalist uncovers a murder mystery told through multiple perspectives."
+  },
+  {
+    "id": "thithi",
+    "title": "Thithi",
+    "year": 2015,
+    "rating": 8.0,
+    "genres": ["Comedy", "Drama"],
+    "providers": ["prime-video", "netflix"],
+    "language": "Kannada",
+    "synopsis": "Three generations of a family cope with the death of their 101-year-old patriarch."
+  },
+  {
+    "id": "kirik-party",
+    "title": "Kirik Party",
+    "year": 2016,
+    "rating": 8.0,
+    "genres": ["Comedy", "Romance", "Drama"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Kannada",
+    "synopsis": "Engineering college friends navigate ragging, love, and growing up."
+  },
+  {
+    "id": "kgf-chapter-1",
+    "title": "KGF: Chapter 1",
+    "year": 2018,
+    "rating": 8.2,
+    "genres": ["Action", "Drama", "Thriller"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Kannada",
+    "synopsis": "A man rises from poverty to become the ruler of a gold mining empire."
+  },
+  {
+    "id": "kgf-chapter-2",
+    "title": "KGF: Chapter 2",
+    "year": 2022,
+    "rating": 8.4,
+    "genres": ["Action", "Drama", "Thriller"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "Kannada",
+    "synopsis": "Rocky's reign in KGF is threatened by enemies from the government and underworld."
+  },
+  {
+    "id": "kantara",
+    "title": "Kantara",
+    "year": 2022,
+    "rating": 8.5,
+    "genres": ["Action", "Drama", "Thriller"],
+    "providers": ["prime-video"],
+    "language": "Kannada",
+    "synopsis": "A rebellious villager clashes with a forest officer over sacred land."
+  },
+  {
+    "id": "777-charlie",
+    "title": "777 Charlie",
+    "year": 2022,
+    "rating": 8.7,
+    "genres": ["Drama", "Adventure", "Comedy"],
+    "providers": ["prime-video"],
+    "language": "Kannada",
+    "synopsis": "A lonely, angry man's life transforms when a Labrador enters his world."
+  },
+  {
     "id": "inception",
     "title": "Inception",
     "year": 2010,
     "rating": 8.8,
-    "genres": ["Sci-Fi", "Thriller"],
+    "genres": ["Sci-Fi", "Thriller", "Action"],
     "providers": ["netflix", "prime-video"],
+    "language": "English",
     "synopsis": "A thief enters dreams to plant an idea, blurring the line between reality and imagination."
   },
   {
@@ -13,8 +874,9 @@
     "title": "Interstellar",
     "year": 2014,
     "rating": 8.6,
-    "genres": ["Sci-Fi", "Drama"],
+    "genres": ["Sci-Fi", "Drama", "Adventure"],
     "providers": ["prime-video", "hotstar"],
+    "language": "English",
     "synopsis": "Explorers travel through a wormhole to find a new home for humanity."
   },
   {
@@ -24,97 +886,8 @@
     "rating": 9.0,
     "genres": ["Action", "Crime", "Thriller"],
     "providers": ["netflix"],
-    "synopsis": "Batman faces the Joker in a battle that tests Gotham’s moral limits."
-  },
-  {
-    "id": "la-la-land",
-    "title": "La La Land",
-    "year": 2016,
-    "rating": 8.0,
-    "genres": ["Romance", "Drama"],
-    "providers": ["hotstar"],
-    "synopsis": "A jazz musician and an actress chase dreams in Los Angeles."
-  },
-  {
-    "id": "parasite",
-    "title": "Parasite",
-    "year": 2019,
-    "rating": 8.6,
-    "genres": ["Thriller", "Drama"],
-    "providers": ["prime-video", "hotstar"],
-    "synopsis": "A cunning plan entangles two families across class lines."
-  },
-  {
-    "id": "the-social-network",
-    "title": "The Social Network",
-    "year": 2010,
-    "rating": 7.8,
-    "genres": ["Drama"],
-    "providers": ["netflix", "prime-video"],
-    "synopsis": "The founding of Facebook sparks ambition, betrayal, and legal battles."
-  },
-  {
-    "id": "spirited-away",
-    "title": "Spirited Away",
-    "year": 2001,
-    "rating": 8.6,
-    "genres": ["Animation", "Fantasy", "Family"],
-    "providers": ["netflix", "hotstar"],
-    "synopsis": "A young girl enters a spirit world and must find her way back."
-  },
-  {
-    "id": "mad-max-fury-road",
-    "title": "Mad Max: Fury Road",
-    "year": 2015,
-    "rating": 8.1,
-    "genres": ["Action", "Adventure"],
-    "providers": ["prime-video"],
-    "synopsis": "In a desert wasteland, a high-octane escape ignites a rebellion."
-  },
-  {
-    "id": "whiplash",
-    "title": "Whiplash",
-    "year": 2014,
-    "rating": 8.5,
-    "genres": ["Drama"],
-    "providers": ["netflix"],
-    "synopsis": "An ambitious drummer clashes with a ruthless instructor."
-  },
-  {
-    "id": "coco",
-    "title": "Coco",
-    "year": 2017,
-    "rating": 8.4,
-    "genres": ["Animation", "Family", "Fantasy"],
-    "providers": ["hotstar", "prime-video"],
-    "synopsis": "A boy’s journey into the Land of the Dead celebrates music and memory."
-  },
-  {
-    "id": "get-out",
-    "title": "Get Out",
-    "year": 2017,
-    "rating": 7.7,
-    "genres": ["Horror", "Thriller"],
-    "providers": ["netflix"],
-    "synopsis": "A visit to the in-laws spirals into a chilling social nightmare."
-  },
-  {
-    "id": "arrival",
-    "title": "Arrival",
-    "year": 2016,
-    "rating": 7.9,
-    "genres": ["Sci-Fi", "Drama"],
-    "providers": ["prime-video"],
-    "synopsis": "A linguist deciphers alien language to unlock a different perception of time."
-  },
-  {
-    "id": "the-grand-budapest-hotel",
-    "title": "The Grand Budapest Hotel",
-    "year": 2014,
-    "rating": 8.1,
-    "genres": ["Comedy", "Drama"],
-    "providers": ["hotstar"],
-    "synopsis": "A legendary concierge and his lobby boy navigate a caper of a lifetime."
+    "language": "English",
+    "synopsis": "Batman faces the Joker in a battle that tests Gotham's moral limits."
   },
   {
     "id": "the-godfather",
@@ -123,43 +896,38 @@
     "rating": 9.2,
     "genres": ["Crime", "Drama"],
     "providers": ["prime-video"],
-    "synopsis": "A powerful crime family negotiates loyalty, power, and legacy."
+    "language": "English",
+    "synopsis": "A powerful crime family navigates loyalty, power, and legacy in 1940s America."
   },
   {
-    "id": "toy-story",
-    "title": "Toy Story",
-    "year": 1995,
-    "rating": 8.3,
-    "genres": ["Animation", "Family", "Comedy"],
-    "providers": ["hotstar"],
-    "synopsis": "Toys come to life and learn about friendship and change."
-  },
-  {
-    "id": "joker",
-    "title": "Joker",
-    "year": 2019,
-    "rating": 8.4,
+    "id": "pulp-fiction",
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "rating": 8.9,
     "genres": ["Crime", "Drama"],
     "providers": ["netflix", "prime-video"],
-    "synopsis": "A man’s descent into chaos births a notorious Gotham figure."
+    "language": "English",
+    "synopsis": "Interwoven stories of crime in Los Angeles unfold in non-linear fashion."
   },
   {
-    "id": "knives-out",
-    "title": "Knives Out",
-    "year": 2019,
-    "rating": 7.9,
-    "genres": ["Comedy", "Crime", "Thriller"],
-    "providers": ["prime-video"],
-    "synopsis": "A witty detective unravels a wealthy family’s web of lies."
+    "id": "the-shawshank-redemption",
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "rating": 9.3,
+    "genres": ["Drama"],
+    "providers": ["netflix", "prime-video"],
+    "language": "English",
+    "synopsis": "A banker sentenced to life in Shawshank prison finds hope and redemption."
   },
   {
-    "id": "your-name",
-    "title": "Your Name",
-    "year": 2016,
-    "rating": 8.4,
-    "genres": ["Animation", "Romance", "Drama"],
-    "providers": ["netflix", "hotstar"],
-    "synopsis": "Two teens mysteriously connect across time and distance."
+    "id": "forrest-gump",
+    "title": "Forrest Gump",
+    "year": 1994,
+    "rating": 8.8,
+    "genres": ["Drama", "Romance", "Comedy"],
+    "providers": ["netflix", "prime-video"],
+    "language": "English",
+    "synopsis": "A simple man unwittingly influences major historical events across decades."
   },
   {
     "id": "the-matrix",
@@ -168,60 +936,207 @@
     "rating": 8.7,
     "genres": ["Sci-Fi", "Action"],
     "providers": ["netflix"],
-    "synopsis": "A hacker awakens to a simulated reality and the fight for freedom."
+    "language": "English",
+    "synopsis": "A hacker awakens to a simulated reality and the fight for human freedom."
   },
   {
-    "id": "capernaum",
-    "title": "Capernaum",
-    "year": 2018,
-    "rating": 8.4,
-    "genres": ["Drama"],
+    "id": "fight-club",
+    "title": "Fight Club",
+    "year": 1999,
+    "rating": 8.8,
+    "genres": ["Drama", "Thriller"],
     "providers": ["prime-video"],
-    "synopsis": "A Lebanese boy sues his parents for bringing him into a world of hardship."
+    "language": "English",
+    "synopsis": "An insomniac office worker and a soap salesman form an underground fight club."
   },
   {
-    "id": "rango",
-    "title": "Rango",
-    "year": 2011,
-    "rating": 7.2,
-    "genres": ["Animation", "Comedy", "Adventure"],
+    "id": "gladiator",
+    "title": "Gladiator",
+    "year": 2000,
+    "rating": 8.5,
+    "genres": ["Action", "Drama", "Adventure"],
     "providers": ["prime-video", "hotstar"],
-    "synopsis": "A chameleon becomes a town’s unlikely sheriff in a dusty frontier."
+    "language": "English",
+    "synopsis": "A Roman general is betrayed and must fight as a gladiator to avenge his family."
   },
   {
-    "id": "the-conjuring",
-    "title": "The Conjuring",
-    "year": 2013,
-    "rating": 7.5,
-    "genres": ["Horror", "Thriller"],
-    "providers": ["hotstar"],
-    "synopsis": "Paranormal investigators confront a terrifying presence in a farmhouse."
-  },
-  {
-    "id": "zindagi-na-milegi-dobara",
-    "title": "Zindagi Na Milegi Dobara",
-    "year": 2011,
-    "rating": 8.2,
-    "genres": ["Drama", "Comedy"],
-    "providers": ["netflix", "hotstar"],
-    "synopsis": "Three friends embark on a life-changing road trip across Spain."
-  },
-  {
-    "id": "andhadhun",
-    "title": "Andhadhun",
-    "year": 2018,
-    "rating": 8.2,
-    "genres": ["Thriller", "Crime"],
+    "id": "the-lord-of-the-rings-fellowship",
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "rating": 8.8,
+    "genres": ["Fantasy", "Adventure", "Drama"],
     "providers": ["netflix", "prime-video"],
-    "synopsis": "A blind pianist is swept into a darkly comic crime tangle."
+    "language": "English",
+    "synopsis": "A hobbit begins his quest to destroy a powerful ring in Middle-earth."
   },
   {
-    "id": "dangal",
-    "title": "Dangal",
-    "year": 2016,
-    "rating": 8.3,
-    "genres": ["Drama", "Family"],
+    "id": "spirited-away",
+    "title": "Spirited Away",
+    "year": 2001,
+    "rating": 8.6,
+    "genres": ["Animation", "Fantasy", "Family"],
+    "providers": ["netflix", "hotstar"],
+    "language": "English",
+    "synopsis": "A young girl enters a spirit world and must find her way back to her parents."
+  },
+  {
+    "id": "parasite",
+    "title": "Parasite",
+    "year": 2019,
+    "rating": 8.6,
+    "genres": ["Thriller", "Drama", "Comedy"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "English",
+    "synopsis": "A cunning plan entangles two families across class lines with shocking consequences."
+  },
+  {
+    "id": "whiplash",
+    "title": "Whiplash",
+    "year": 2014,
+    "rating": 8.5,
+    "genres": ["Drama", "Musical"],
+    "providers": ["netflix"],
+    "language": "English",
+    "synopsis": "An ambitious drummer clashes with a ruthless music instructor."
+  },
+  {
+    "id": "mad-max-fury-road",
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "rating": 8.1,
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "providers": ["prime-video"],
+    "language": "English",
+    "synopsis": "In a desert wasteland, a high-octane escape ignites a rebellion."
+  },
+  {
+    "id": "avengers-endgame",
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "rating": 8.4,
+    "genres": ["Action", "Adventure", "Sci-Fi"],
     "providers": ["hotstar"],
-    "synopsis": "A father coaches his daughters to wrestling glory against the odds."
+    "language": "English",
+    "synopsis": "The Avengers assemble one last time to undo Thanos's devastating snap."
+  },
+  {
+    "id": "joker",
+    "title": "Joker",
+    "year": 2019,
+    "rating": 8.4,
+    "genres": ["Crime", "Drama", "Thriller"],
+    "providers": ["netflix", "prime-video"],
+    "language": "English",
+    "synopsis": "A man's descent into madness births the notorious Gotham villain."
+  },
+  {
+    "id": "dune-2021",
+    "title": "Dune",
+    "year": 2021,
+    "rating": 8.0,
+    "genres": ["Sci-Fi", "Adventure", "Drama"],
+    "providers": ["netflix", "prime-video"],
+    "language": "English",
+    "synopsis": "A noble family's heir must embrace his destiny on a dangerous desert planet."
+  },
+  {
+    "id": "oppenheimer",
+    "title": "Oppenheimer",
+    "year": 2023,
+    "rating": 8.6,
+    "genres": ["Drama", "Thriller"],
+    "providers": ["prime-video"],
+    "language": "English",
+    "synopsis": "The story of J. Robert Oppenheimer and the creation of the atomic bomb."
+  },
+  {
+    "id": "barbie",
+    "title": "Barbie",
+    "year": 2023,
+    "rating": 7.0,
+    "genres": ["Comedy", "Fantasy", "Adventure"],
+    "providers": ["prime-video"],
+    "language": "English",
+    "synopsis": "Barbie ventures into the real world to discover the meaning of existence."
+  },
+  {
+    "id": "singin-in-the-rain",
+    "title": "Singin' in the Rain",
+    "year": 1952,
+    "rating": 8.3,
+    "genres": ["Comedy", "Musical", "Romance"],
+    "providers": ["prime-video"],
+    "language": "English",
+    "synopsis": "A silent film star adapts to talking pictures while falling in love."
+  },
+  {
+    "id": "psycho",
+    "title": "Psycho",
+    "year": 1960,
+    "rating": 8.5,
+    "genres": ["Horror", "Thriller"],
+    "providers": ["prime-video"],
+    "language": "English",
+    "synopsis": "A secretary on the run checks into a secluded motel with a deadly secret."
+  },
+  {
+    "id": "2001-space-odyssey",
+    "title": "2001: A Space Odyssey",
+    "year": 1968,
+    "rating": 8.3,
+    "genres": ["Sci-Fi", "Adventure"],
+    "providers": ["prime-video"],
+    "language": "English",
+    "synopsis": "A voyage to Jupiter with the sentient computer HAL examines human evolution."
+  },
+  {
+    "id": "the-exorcist",
+    "title": "The Exorcist",
+    "year": 1973,
+    "rating": 8.1,
+    "genres": ["Horror"],
+    "providers": ["prime-video"],
+    "language": "English",
+    "synopsis": "Two priests attempt to save a young girl possessed by a demonic entity."
+  },
+  {
+    "id": "jaws",
+    "title": "Jaws",
+    "year": 1975,
+    "rating": 8.0,
+    "genres": ["Thriller", "Adventure", "Horror"],
+    "providers": ["prime-video", "netflix"],
+    "language": "English",
+    "synopsis": "A police chief, scientist, and shark hunter face a killer great white shark."
+  },
+  {
+    "id": "star-wars-1977",
+    "title": "Star Wars: Episode IV - A New Hope",
+    "year": 1977,
+    "rating": 8.6,
+    "genres": ["Sci-Fi", "Fantasy", "Action"],
+    "providers": ["hotstar"],
+    "language": "English",
+    "synopsis": "A farm boy joins rebels to rescue a princess and destroy the Death Star."
+  },
+  {
+    "id": "raiders-lost-ark",
+    "title": "Raiders of the Lost Ark",
+    "year": 1981,
+    "rating": 8.4,
+    "genres": ["Action", "Adventure"],
+    "providers": ["prime-video", "hotstar"],
+    "language": "English",
+    "synopsis": "Archaeologist Indiana Jones races Nazis to find the Ark of the Covenant."
+  },
+  {
+    "id": "back-to-the-future",
+    "title": "Back to the Future",
+    "year": 1985,
+    "rating": 8.5,
+    "genres": ["Sci-Fi", "Adventure", "Comedy"],
+    "providers": ["netflix", "prime-video"],
+    "language": "English",
+    "synopsis": "A teen accidentally travels to 1955 in a time-traveling DeLorean."
   }
 ]
