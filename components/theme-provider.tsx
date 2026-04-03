@@ -57,6 +57,8 @@ function applyTheme(colorTheme: ColorTheme, theme: Theme) {
   // Also set data attribute for compatibility
   root.setAttribute("data-theme", colorTheme)
   root.setAttribute("data-mode", resolvedTheme)
+  
+  console.log("[v0] Theme applied:", { colorTheme, theme, resolvedTheme, classes: root.className })
 }
 
 export function ThemeProvider({
