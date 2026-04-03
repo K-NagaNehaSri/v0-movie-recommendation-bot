@@ -30,7 +30,7 @@ const languages = [
 ]
 
 export function SettingsSection() {
-  const { theme, colorTheme, setTheme, setColorTheme } = useTheme()
+  const { theme, colorTheme, setTheme, setColorTheme, mounted } = useTheme()
   const { favorites, clearFavorites } = useFavorites()
   const { watchlist, clearWatchlist } = useWatchlist()
   const [preferredLanguages, setPreferredLanguages] = useState<string[]>([])
@@ -38,6 +38,36 @@ export function SettingsSection() {
   const toggleLanguage = (langId: string) => {
     setPreferredLanguages((prev) =>
       prev.includes(langId) ? prev.filter((l) => l !== langId) : [...prev, langId]
+    )
+  }
+
+  // Prevent hydration mismatch
+  if (!mounted) {
+    return (
+      <section>
+        <div className="flex items-center gap-3 mb-6">
+          <div className="p-2 rounded-lg bg-muted">
+            <Settings className="h-6 w-6 text-foreground" />
+          </div>
+          <div>
+            <h2 className="text-xl font-bold text-foreground">Settings</h2>
+            <p className="text-sm text-muted-foreground">Customize your MovieBot experience</p>
+          </div>
+        </div>
+        <div className="grid gap-6 lg:grid-cols-2">
+          {[1, 2, 3, 4].map((i) => (
+            <Card key={i} className="bg-card border-border animate-pulse">
+              <CardHeader>
+                <div className="h-5 bg-muted rounded w-1/3" />
+                <div className="h-4 bg-muted rounded w-2/3 mt-2" />
+              </CardHeader>
+              <CardContent>
+                <div className="h-20 bg-muted rounded" />
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
     )
   }
 

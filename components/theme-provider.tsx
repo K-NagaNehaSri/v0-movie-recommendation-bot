@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { createContext, useContext, useEffect, useState } from "react"
+import { createContext, useContext, useEffect, useState, useLayoutEffect } from "react"
 
 type Theme = "light" | "dark" | "system"
 type ColorTheme = "default" | "ocean" | "forest" | "sunset" | "lavender" | "ruby"
@@ -19,6 +19,7 @@ type ThemeProviderState = {
   colorTheme: ColorTheme
   setTheme: (theme: Theme) => void
   setColorTheme: (colorTheme: ColorTheme) => void
+  mounted: boolean
 }
 
 const initialState: ThemeProviderState = {
@@ -26,9 +27,37 @@ const initialState: ThemeProviderState = {
   colorTheme: "default",
   setTheme: () => null,
   setColorTheme: () => null,
+  mounted: false,
 }
 
 const ThemeProviderContext = createContext<ThemeProviderState>(initialState)
+
+// Use useLayoutEffect on client, useEffect on server
+const useIsomorphicLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect
+
+function applyTheme(colorTheme: ColorTheme, theme: Theme) {
+  if (typeof window === "undefined") return
+  
+  const root = window.document.documentElement
+
+  // Remove all theme classes
+  root.classList.remove("light", "dark")
+  root.classList.remove("theme-default", "theme-ocean", "theme-forest", "theme-sunset", "theme-lavender", "theme-ruby")
+
+  // Add color theme class
+  root.classList.add(`theme-${colorTheme}`)
+
+  // Determine and add light/dark mode
+  let resolvedTheme: "light" | "dark" = theme === "system" 
+    ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+    : theme
+
+  root.classList.add(resolvedTheme)
+  
+  // Also set data attribute for compatibility
+  root.setAttribute("data-theme", colorTheme)
+  root.setAttribute("data-mode", resolvedTheme)
+}
 
 export function ThemeProvider({
   children,
@@ -36,41 +65,31 @@ export function ThemeProvider({
   defaultColorTheme = "default",
   storageKey = "movie-bot-theme",
   colorStorageKey = "movie-bot-color-theme",
-  ...props
 }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(defaultTheme)
-  const [colorTheme, setColorTheme] = useState<ColorTheme>(defaultColorTheme)
+  const [theme, setThemeState] = useState<Theme>(defaultTheme)
+  const [colorTheme, setColorThemeState] = useState<ColorTheme>(defaultColorTheme)
   const [mounted, setMounted] = useState(false)
 
-  useEffect(() => {
+  // Load stored preferences and apply theme immediately on mount
+  useIsomorphicLayoutEffect(() => {
     const storedTheme = localStorage.getItem(storageKey) as Theme | null
     const storedColorTheme = localStorage.getItem(colorStorageKey) as ColorTheme | null
-    if (storedTheme) setTheme(storedTheme)
-    if (storedColorTheme) setColorTheme(storedColorTheme)
+    
+    const finalTheme = storedTheme || defaultTheme
+    const finalColorTheme = storedColorTheme || defaultColorTheme
+    
+    if (storedTheme) setThemeState(storedTheme)
+    if (storedColorTheme) setColorThemeState(storedColorTheme)
+    
+    // Apply theme immediately
+    applyTheme(finalColorTheme, finalTheme)
     setMounted(true)
-  }, [storageKey, colorStorageKey])
+  }, [storageKey, colorStorageKey, defaultTheme, defaultColorTheme])
 
+  // Re-apply theme when theme or colorTheme changes
   useEffect(() => {
     if (!mounted) return
-    const root = window.document.documentElement
-
-    // Remove all theme classes
-    root.classList.remove("light", "dark")
-    root.classList.remove("theme-default", "theme-ocean", "theme-forest", "theme-sunset", "theme-lavender", "theme-ruby")
-
-    // Add color theme class
-    root.classList.add(`theme-${colorTheme}`)
-
-    // Determine and add light/dark mode
-    let resolvedTheme = theme
-    if (theme === "system") {
-      resolvedTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
-    }
-    root.classList.add(resolvedTheme)
-    
-    // Also set data attribute for compatibility
-    root.setAttribute("data-theme", colorTheme)
-    root.setAttribute("data-mode", resolvedTheme)
+    applyTheme(colorTheme, theme)
   }, [theme, colorTheme, mounted])
   
   // Listen for system theme changes
@@ -78,36 +97,35 @@ export function ThemeProvider({
     if (!mounted || theme !== "system") return
     
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
-    const handleChange = (e: MediaQueryListEvent) => {
-      const root = window.document.documentElement
-      root.classList.remove("light", "dark")
-      root.classList.add(e.matches ? "dark" : "light")
-      root.setAttribute("data-mode", e.matches ? "dark" : "light")
+    const handleChange = () => {
+      applyTheme(colorTheme, theme)
     }
     
     mediaQuery.addEventListener("change", handleChange)
     return () => mediaQuery.removeEventListener("change", handleChange)
-  }, [theme, mounted])
+  }, [theme, colorTheme, mounted])
 
-  const value = {
+  const setTheme = (newTheme: Theme) => {
+    localStorage.setItem(storageKey, newTheme)
+    setThemeState(newTheme)
+  }
+
+  const setColorTheme = (newColorTheme: ColorTheme) => {
+    localStorage.setItem(colorStorageKey, newColorTheme)
+    setColorThemeState(newColorTheme)
+  }
+
+  const value: ThemeProviderState = {
     theme,
     colorTheme,
-    setTheme: (theme: Theme) => {
-      localStorage.setItem(storageKey, theme)
-      setTheme(theme)
-    },
-    setColorTheme: (colorTheme: ColorTheme) => {
-      localStorage.setItem(colorStorageKey, colorTheme)
-      setColorTheme(colorTheme)
-    },
+    setTheme,
+    setColorTheme,
+    mounted,
   }
 
-  if (!mounted) {
-    return <>{children}</>
-  }
-
+  // Always render the provider, but children may show loading state based on mounted
   return (
-    <ThemeProviderContext.Provider {...props} value={value}>
+    <ThemeProviderContext.Provider value={value}>
       {children}
     </ThemeProviderContext.Provider>
   )

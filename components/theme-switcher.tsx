@@ -22,7 +22,17 @@ const colorThemes = [
 ] as const
 
 export function ThemeSwitcher() {
-  const { theme, colorTheme, setTheme, setColorTheme } = useTheme()
+  const { theme, colorTheme, setTheme, setColorTheme, mounted } = useTheme()
+
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!mounted) {
+    return (
+      <div className="flex items-center gap-2">
+        <div className="h-9 w-9 rounded-md border border-border bg-card animate-pulse" />
+        <div className="h-9 w-9 rounded-md border border-border bg-card animate-pulse" />
+      </div>
+    )
+  }
 
   return (
     <div className="flex items-center gap-2">
