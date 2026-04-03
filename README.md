@@ -69,4 +69,4 @@ Contributions are welcome! Feel free to fork this repository and submit a pull r
 
 For questions or suggestions, feel free to reach out:
 - **GitHub:** [@K-NagaNehaSri](https://github.com/K-NagaNehaSri)
-- **LinkedIn:**[@K-NagaNehaSri](www.linkedin.com/in/k-naga-neha-sri-b78b3937a)
+- **LinkedIn:**[@www.linkedin.com/in/k-naga-neha-sri-b78b3937a](www.linkedin.com/in/k-naga-neha-sri-b78b3937a)
