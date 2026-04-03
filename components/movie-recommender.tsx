@@ -10,6 +10,9 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Heart, Clock, Star, Calendar } from "lucide-react"
+import { useFavorites } from "@/hooks/use-favorites"
+import { useWatchlist } from "@/hooks/use-watchlist"
 
 type RecommendRequest = {
   providers: string[]
@@ -125,6 +128,9 @@ export default function MovieRecommender() {
   const [minRating, setMinRating] = useState<string>("6.0")
   const [mood, setMood] = useState<string>("")
 
+  const { addFavorite, removeFavorite, isFavorite } = useFavorites()
+  const { addToWatchlist, removeFromWatchlist, isInWatchlist } = useWatchlist()
+
   const { data, error, trigger, isMutating } = useSWRMutation<RecommendResponse, Error, string, RecommendRequest>(
     "recommend",
     fetcher,
@@ -144,6 +150,22 @@ export default function MovieRecommender() {
 
   const toggleProvider = (id: string, checked: boolean | string) => {
     setSelectedProviders((prev) => (checked ? Array.from(new Set([...prev, id])) : prev.filter((p) => p !== id)))
+  }
+
+  const handleToggleFavorite = (movie: Movie) => {
+    if (isFavorite(movie.id)) {
+      removeFavorite(movie.id)
+    } else {
+      addFavorite(movie)
+    }
+  }
+
+  const handleToggleWatchlist = (movie: Movie) => {
+    if (isInWatchlist(movie.id)) {
+      removeFromWatchlist(movie.id)
+    } else {
+      addToWatchlist(movie)
+    }
   }
 
   return (
@@ -266,17 +288,44 @@ export default function MovieRecommender() {
         {data?.items?.length ? (
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {data.items.map((movie) => (
-              <Card key={movie.id} className="bg-card border-border hover:shadow-lg transition-shadow">
+              <Card key={movie.id} className="bg-card border-border hover:shadow-lg transition-shadow group">
                 <CardContent className="pt-6">
                   <div className="flex items-start justify-between gap-2 mb-2">
                     <h3 className="text-base font-semibold text-foreground leading-tight">{movie.title}</h3>
+                    <div className="flex gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        className={`h-7 w-7 ${isFavorite(movie.id) ? "text-rose-500" : "text-muted-foreground hover:text-rose-500"}`}
+                        onClick={() => handleToggleFavorite(movie)}
+                        title={isFavorite(movie.id) ? "Remove from favorites" : "Add to favorites"}
+                      >
+                        <Heart className={`h-4 w-4 ${isFavorite(movie.id) ? "fill-current" : ""}`} />
+                      </Button>
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        className={`h-7 w-7 ${isInWatchlist(movie.id) ? "text-blue-500" : "text-muted-foreground hover:text-blue-500"}`}
+                        onClick={() => handleToggleWatchlist(movie)}
+                        title={isInWatchlist(movie.id) ? "Remove from watchlist" : "Add to watchlist"}
+                      >
+                        <Clock className={`h-4 w-4 ${isInWatchlist(movie.id) ? "fill-current" : ""}`} />
+                      </Button>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 mb-2">
                     <Badge className={getLangBadgeClass(movie.language)}>
                       {movie.language}
                     </Badge>
+                    <span className="flex items-center gap-1 text-sm text-muted-foreground">
+                      <Calendar className="h-3.5 w-3.5" />
+                      {movie.year}
+                    </span>
+                    <span className="flex items-center gap-1 text-sm text-muted-foreground">
+                      <Star className="h-3.5 w-3.5 fill-yellow-500 text-yellow-500" />
+                      {movie.rating.toFixed(1)}
+                    </span>
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    {movie.year} &bull; {movie.rating.toFixed(1)}/10
-                  </p>
                   <div className="mt-3 flex flex-wrap gap-1.5">
                     {movie.genres.map((g) => (
                       <Badge key={g} variant="secondary" className="bg-secondary text-secondary-foreground text-xs">
