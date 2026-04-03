@@ -54,18 +54,40 @@ export function ThemeProvider({
     if (!mounted) return
     const root = window.document.documentElement
 
+    // Remove all theme classes
     root.classList.remove("light", "dark")
     root.classList.remove("theme-default", "theme-ocean", "theme-forest", "theme-sunset", "theme-lavender", "theme-ruby")
 
+    // Add color theme class
     root.classList.add(`theme-${colorTheme}`)
 
+    // Determine and add light/dark mode
+    let resolvedTheme = theme
     if (theme === "system") {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
-      root.classList.add(systemTheme)
-    } else {
-      root.classList.add(theme)
+      resolvedTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
     }
+    root.classList.add(resolvedTheme)
+    
+    // Also set data attribute for compatibility
+    root.setAttribute("data-theme", colorTheme)
+    root.setAttribute("data-mode", resolvedTheme)
   }, [theme, colorTheme, mounted])
+  
+  // Listen for system theme changes
+  useEffect(() => {
+    if (!mounted || theme !== "system") return
+    
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
+    const handleChange = (e: MediaQueryListEvent) => {
+      const root = window.document.documentElement
+      root.classList.remove("light", "dark")
+      root.classList.add(e.matches ? "dark" : "light")
+      root.setAttribute("data-mode", e.matches ? "dark" : "light")
+    }
+    
+    mediaQuery.addEventListener("change", handleChange)
+    return () => mediaQuery.removeEventListener("change", handleChange)
+  }, [theme, mounted])
 
   const value = {
     theme,
