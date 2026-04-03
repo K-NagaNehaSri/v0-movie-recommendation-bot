@@ -1,29 +1,28 @@
-# Movie recommendation bot
+# 🎬 Movie Recommendation Bot
+
 
 *Automatically synced with your [v0.app](https://v0.app) deployments*
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/nehasribcm-5105s-projects/v0-movie-recommendation-bot)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/aT3ZmrSCsus)
+A modern, AI-inspired web application that provides personalized movie suggestions. This project focuses on delivering a seamless user experience with a "cinematic" dark-themed UI.
 
-## Overview
+## 🚀 Features
+- **Personalized Suggestions:** Recommends movies based on user-selected genres and moods.
+- **Cinematic UI:** Built with a dark theme, elegant typography, and responsive design.
+- **Interactive Interface:** Smooth transitions and hover effects for movie cards.
+- **Mock API Integration:** Uses a structured API route to simulate real-time model interaction.
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## 🛠️ Tech Stack
+- **Frontend:** Next.js 14, React, Tailwind CSS
+- **Styling:** Lucide React (Icons), Shadcn UI
+- **Language:** TypeScript / JavaScript
+
+## 🧠 Future Enhancements (AI/ML Roadmap)
+As a CS student specializing in AI/ML, I plan to:
+- Replace the mock API with a **Content-Based Filtering** model using Python (Flask/FastAPI).
+- Implement **Collaborative Filtering** using the MovieLens dataset.
+- Add a Natural Language Processing (NLP) chat interface to process "Tell me a movie like Inception."
 
 ## Deployment
 
 Your project is live at:https://v0-movie-recommendation-bot-five.vercel.app/
 
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.app/chat/projects/aT3ZmrSCsus](https://v0.app/chat/projects/aT3ZmrSCsus)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
